@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--**************************************************************************-->
+  <!--Menu Strings-->
+  <!--**************************************************************************-->
+  <!--In-Game Menu-->
+  <string name="menuItem_toggleSpeed">Скорость %1$d %%</string>
+  <string name="menuItem_slotSave">Сохранить в слот</string>
+  <string name="menuItem_slotLoad">Загрузить из слота</string>
+  <string name="menuItem_setSlot">Слот %1$d</string>
+  <string name="menuItem_fileSave">Сохранение в файл…</string>
+  <string name="menuItem_fileLoad">Загрузка из файла…</string>
+  <string name="menuItem_setSpeed">Скорость игры</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak1_empty">Игрок 1: Нет</string>
+  <!--capitalize since trademark-->
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak2_empty">Игрок 2: Нет</string>
+  <!--capitalize since trademark-->
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak3_empty">Игрок 3: Нет</string>
+  <!--capitalize since trademark-->
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak4_empty">Игрок 4: Нет</string>
+  <!--capitalize since trademark-->
+  <!--capitalize since trademark-->
+  <string name="menuItem_setIme">Выбор метода ввода</string>
+  <string name="menuItem_exit">Выход</string>
+  <!--Input Mapping Activity-->
+  <string name="menuItem_deadzone">Мертвая зона</string>
+  <string name="menuItem_sensitivity">Чувствительность</string>
+  <string name="menuItem_unmapAll">Сбросить всё</string>
+  <!--Menu Activity-->
+  <string name="menuItem_play">Играть</string>
+  <string name="menuItem_settings">Настройки</string>
+  <string name="menuItem_help">Помощь</string>
+  <string name="menuItem_faq">ЧАВО</string>
+  <string name="menuItem_controllerDiagnostics">Проверка устройств ввода</string>
+  <string name="menuItem_reportBug">Сообщить об ошибке</string>
+  <string name="menuItem_about">О программе</string>
+  <string name="menuItem_credits">Благодарности</string>
+  <string name="menuItem_changelog">Список изменений</string>
+  <string name="menuItem_localeOverride">Язык</string>
+  <!--ManageProfilesActivity-->
+  <!--Popup Dialogs-->
+  <string name="popup_faq">Mupen64Plus разрабатывается добровольцами.<small>\n\nДля решения проблем с графикой попробуйте другой плагин видео.\n\nДля повышения производительности измените настройки пропуска кадров.\n\nПри ошибке открытия образа игры извлеките его из архива или найдите другую версию.\n\nбла-бла-бла, короче пользуйтесь настройками, иначе зачем я столько переводил?\n\nПри появлении других проблем воспользуйтесь ЧАВО и форумом (см. ниже).\n</small>\n\nЗаранее спасибо.</string>
+  <string name="popup_version">Версия: %1$s\nКод версии: %2$d</string>
+  <!--Lists-->
+  <!--ManageProfilesActivity Name/Comment Dialog-->
+  <!--**************************************************************************-->
+  <!--Toast Messages-->
+  <!--Developers: Follow punctuation and grammar as shown below-->
+  <!--**************************************************************************-->
+  <!--Something happening (typically use '-ing' and '…')-->
+  <string name="toast_rebuildingCheats">Пересборка базы чит-кодов…</string>
+  <string name="toast_launchingEmulator">Эмулятор запускается…</string>
+  <string name="toast_loadingSession">Возобновление игры…</string>
+  <string name="toast_savingSession">Авто-сохранение…</string>
+  <string name="toast_loadingSlot">Загрузка слота %1$d…</string>
+  <string name="toast_savingSlot">Сохранение слота %1$d…</string>
+  <string name="toast_loadingFile">Загрузка %1$s…</string>
+  <string name="toast_savingFile">Сохранение %1$s…</string>
+  <string name="toast_overwritingFile">Перезапись %1$s…</string>
+  <!--Something happened (use '.')-->
+  <string name="toast_usingSlot">Сейчас используется слот %1$d.</string>
+  <string name="toast_sdInaccessible">Карта недоступна</string>
+  <string name="toast_crashReportSent">Отчёт отправлен.</string>
+  <!--**************************************************************************-->
+  <!--Preference Menu Strings-->
+  <!--Developers: Please follow naming conventions described in preferences.xml-->
+  <!--Developers: In general, capitalize first word only and avoid punctuation-->
+  <!--**************************************************************************-->
+  <!--Actions (simply launch an action, aren't related to persistent data)-->
+  <string name="actionResume_title">Продолжить</string>
+  <string name="actionResume_summary">Возможно использование чит-кодов</string>
+  <string name="actionRestart_title">Перезапуск</string>
+  <string name="actionRestart_summary">Рекомендуется при использовании читов.</string>
+  <string name="actionReloadAssets_title">Перезагрузить ресурсы</string>
+  <string name="actionReloadAssets_summary">Не влияет на настройки пользователя, ROMs, сохранения игр, или другие пользовательские данные</string>
+  <string name="actionCrashTest_title">Проверка</string>
+  <string name="actionCrashTest_summary">Отправить отчёт разработчикам</string>
+  <string name="actionResetUserPrefs_title">Сброс</string>
+  <string name="actionResetUserPrefs_summary">Восстановить настройки по умолчанию</string>
+  <!--Preference Screens-->
+  <string name="screenInput_title">Ввод</string>
+  <string name="screenInput_summary">Настройки управления</string>
+  <string name="screenTouchscreen_title">Тачскрин</string>
+  <string name="screenTouchscreen_summary">Параметры экранных кнопок</string>
+  <string name="screenTouchpad_title">Тачпад</string>
+  <string name="screenTouchpad_summary">Для Xperia PLAY</string>
+  <string name="screenVideo_title">Видео</string>
+  <string name="screenVideo_summary">Настройки графики</string>
+  <string name="screenAdvanced_title">Другое</string>
+  <string name="screenCheats_title">Чит-коды</string>
+  <string name="screenCheats_summaryDisabled">Отключить</string>
+  <!--Preference Categories-->
+  <string name="categoryCheats_title">Чит-коды (нажмите и удерживайте для показа справки)</string>
+  <string name="categoryHardware_title">Оборудование</string>
+  <string name="categoryOther_title">Остальные</string>
+  <string name="categoryTouchscreenBehavior_title">Поведение</string>
+  <string name="categoryTouchscreenAppearance_title">Внешний вид</string>
+  <string name="categoryGln64_title">Настройки Gln64</string>
+  <string name="categoryRice_title">Настройки Rice</string>
+  <string name="categoryGlide64_title">Настройки Glide64 settings</string>
+  <string name="categoryAudio_title">Звук</string>
+  <string name="categoryData_title">Данные</string>
+  <string name="categoryCrashReports_title">Сообщения об ошибках</string>
+  <!--Checkbox Preferences-->
+  <string name="playShowCheats_title">Включить читы</string>
+  <string name="playShowCheats_summary">Загрузка меню медленнее при включенном</string>
+  <string name="touchscreenEnabled_title">Использовать тачскрин</string>
+  <string name="touchscreenFeedback_title">Виброотклик</string>
+  <string name="touchscreenFeedback_summary">Вибрировать при нажатии</string>
+  <string name="touchpadEnabled_title">Использовать экранные кнопки</string>
+  <string name="inputVolumeMappable_title">Использовать звуковые кнопки</string>
+  <string name="inputVolumeMappable_summary">Разрешить переназначение кнопок управления звуком</string>
+  <string name="inputShareController_title">Совместное использование контроллера</string>
+  <string name="inputShareController_summary">Разрешить одному устройству ввода управлять несколькими игроками сразу</string>
+  <string name="gln64Fog_title">Туман</string>
+  <string name="gln64Fog_summary">(требует доработки)</string>
+  <string name="gln64Sai_title">2xSaI фильтрация текстур</string>
+  <string name="gln64Sai_summary">Снизить неровность текстур</string>
+  <string name="gln64ScreenClear_title">Форсировать очистку экрана</string>
+  <string name="gln64ScreenClear_summary">При отключении возможны помехи</string>
+  <string name="gln64AlphaTest_title">Проверка прозрачности</string>
+  <string name="gln64AlphaTest_summary">При отключении возможны чёрные квадраты на месте текстур</string>
+  <string name="gln64DepthTest_title">Проверка глубины</string>
+  <string name="gln64DepthTest_summary">При отключении возможны блики</string>
+  <string name="riceAutoFrameskip_title">Автоматический пропуск кадров</string>
+  <string name="riceAutoFrameskip_summary">Улучшает скорость ценой FPS</string>
+  <string name="riceFastTexture_title">Быстрая загрузка текстур</string>
+  <string name="riceFastTexture_summary">Исправления окружных переходов</string>
+  <string name="riceForceTextureFilter_title">Усилить фильтрацию текстур</string>
+  <string name="riceForceTextureFilter_summary">Исправления неровных текстур</string>
+  <string name="riceHiResTextures_title">Текстуры высокого разрешения</string>
+  <string name="riceHiResTextures_summary">Использовать импортированные пакеты текстур</string>
+  <string name="riceFog_title">Туман</string>
+  <string name="audioSwapChannels_title">Поменять местами аудио каналы</string>
+  <string name="audioSwapChannels_summary">Меняет местами звук слева и справа</string>
+  <!--List Preferences (in this app, most ListPreferences use android:summary="@string/selectedValue")-->
+  <string name="touchscreenAutoHold_entryDisabled">Отключить</string>
+  <string name="touchscreenAutoHold_entryLongPress">При долгом нажатии</string>
+  <string name="touchscreenAutoHold_entrySlideOut">При смещении</string>
+  <string name="touchscreenRefresh_title">Анимация джойстика </string>
+  <string name="touchscreenRefresh_entryNever">Никогда</string>
+  <string name="touchscreenRefresh_entryOccasionally">Изредка</string>
+  <string name="touchscreenRefresh_entryFrequently">Часто</string>
+  <string name="touchscreenStyle_title">Вид кнопок</string>
+  <string name="touchscreenLayout_title">Тип экранных кнопок</string>
+  <string name="touchscreenLayout_entryAnalog">Аналоговый (от roymustang16)</string>
+  <string name="touchscreenLayout_entryDigital">Цифровой (от roymustang16)</string>
+  <string name="touchscreenLayout_entryCustom">Свой (см http://tinyurl.com/984ofyo)</string>
+  <string name="touchpadLayout_title">Расположение экранных кнопок</string>
+  <string name="touchpadLayout_entryDefault">Слева джойстик, справа кнопки</string>
+  <string name="touchpadLayout_entryReverse">Слева кнопки, справа джойстик</string>
+  <string name="displayOrientation_title">Ориентация экрана</string>
+  <string name="displayOrientation_entryLandscape">Альбомная</string>
+  <string name="displayOrientation_entryReverseLandscape">Зеркальная альбомная</string>
+  <string name="displayOrientation_entryPortrait">Портретная</string>
+  <string name="displayOrientation_entryReversePortrait">Зеркальная портретная</string>
+  <string name="displayPosition_title">Вертикальное положение экрана</string>
+  <string name="displayPosition_entryBottom">Низ</string>
+  <string name="displayPosition_entryMiddle">Середина</string>
+  <string name="displayPosition_entryTop">Верх</string>
+  <string name="displayResolution_title">Разрешение рендерера</string>
+  <string name="displayResolution_entryNative">Родное (высокое качество)</string>
+  <string name="displayResolution_entry960x720">960 x 720</string>
+  <string name="displayResolution_entry800x600">800 x 600</string>
+  <string name="displayResolution_entry640x480">640 x 480</string>
+  <string name="displayResolution_entry480x360">480 x 360</string>
+  <string name="displayResolution_entry320x240">320 x 240</string>
+  <string name="displayResolution_entry160x120">160 x 120 (Наибольшая частота кадров)</string>
+  <string name="displayScaling_title">Размер экрана</string>
+  <string name="displayScaling_entryNone">По умолчанию\n<small>Использовать разрешение заданное выше</small></string>
+  <string name="displayScaling_entryZoom">Максимальное\n<small>Без искажений, но с чёрными полосами</small></string>
+  <string name="displayScaling_entryStretch">На весь экран\n<small>Без чёрных полос, возможно нарушение пропорций</small></string>
+  <string name="displayFpsRefresh_title">Отображать FPS</string>
+  <string name="displayFpsRefresh_entryNever">Никогда</string>
+  <string name="displayFpsRefresh_entryOccasionally">Изредка</string>
+  <string name="displayFpsRefresh_entryFrequently">Часто</string>
+  <string name="videoPlugin_entryNone">Заглушка (выключить изображение)</string>
+  <string name="videoPlugin_entryGln64">gln64\n<small>(порт GLN64 v0.4.1)</small></string>
+  <string name="videoPlugin_entryRice">rice\n<small>(порт Rice Video v6.1.0(b))</small></string>
+  <string name="videoPlugin_entryGlide64">glide64\n<small>(порт Glide64 Final (10th Anniversary))</small></string>
+  <string name="videoHardwareType_title">Уменьшение мерцания</string>
+  <string name="videoHardwareType_entryAuto">Автоматическое определение модели телефона/планшета </string>
+  <string name="videoHardwareType_entryStandard">Стандартный профиль</string>
+  <string name="videoHardwareType_entryI">I профиль</string>
+  <string name="videoHardwareType_entryO1">O-1 профиль</string>
+  <string name="videoHardwareType_entryO2">O-2 профиль</string>
+  <string name="videoHardwareType_entryQ">Q профиль</string>
+  <string name="videoHardwareType_entryT">T профиль</string>
+  <string name="gln64Frameskip_title">Пропуск кадров</string>
+  <string name="gln64Frameskip_entryNever">Не пропускать</string>
+  <string name="gln64Frameskip_entryUpTo1">Не больше 1</string>
+  <string name="gln64Frameskip_entryUpTo2">Не больше 2</string>
+  <string name="gln64Frameskip_entryUpTo3">Не больше 3</string>
+  <string name="gln64Frameskip_entryUpTo4">Не больше 4</string>
+  <string name="gln64Frameskip_entryUpTo5">Не больше 5</string>
+  <string name="gln64Frameskip_entryExactly1">Всегда 1</string>
+  <string name="gln64Frameskip_entryExactly2">Всегда 2</string>
+  <string name="gln64Frameskip_entryExactly3">Всегда 3</string>
+  <string name="gln64Frameskip_entryExactly4">Всегда 4</string>
+  <string name="gln64Frameskip_entryExactly5">Всегда 5</string>
+  <string name="riceScreenUpdate_title">Обновление экрана</string>
+  <string name="riceTextureEnhancement_title">Масштабирование текстур/улучшение</string>
+  <string name="riceTextureEnhancement_entryNone">Нет</string>
+  <string name="riceTextureEnhancement_entryScale2x">Масштаб 2x</string>
+  <string name="riceTextureEnhancement_entry2xsai">2x SaI</string>
+  <string name="riceTextureEnhancement_entryHq2x">HQ2x</string>
+  <string name="riceTextureEnhancement_entryLq2x">LQ2x</string>
+  <string name="riceTextureEnhancement_entryHq4x">HQ4x</string>
+  <string name="navigationMode_title">Всякая хрень</string>
+  <string name="navigationMode_summary">Режим навигации в меню: %1$s</string>
+  <string name="navigationMode_entryAuto">Автоопределение из настроек</string>
+  <string name="navigationMode_entryStandard">Стандартный режим</string>
+  <string name="navigationMode_entryBigScreen">Скрыть все панели (ввод только с клавиатуры/геймпада)</string>
+  <string name="r4300Emulator_title">R4300 Эмулятор</string>
+  <string name="r4300Emulator_entryPureInterpreter">Интерпретация</string>
+  <string name="r4300Emulator_entryCachedInterpreter">Интерпретация с кешированием</string>
+  <string name="r4300Emulator_entryDynarec">Рекомпиляция</string>
+  <string name="audioPlugin_entryNone">Заглушка (выключить звук)</string>
+  <string name="audioPlugin_entrySdl">mupen64plus-audio-sdl, v2.0</string>
+  <string name="audioBufferSize_entry2048">Умолчание</string>
+  <string name="localeOverride_entrySystemDefault">Система по умолчанию</string>
+  <!--ACRA Preferences (key names must not be changed)-->
+  <string name="acraEnable_title">Разрешить отправку сообщений об ошибках</string>
+  <string name="acraEnable_summary">Вся информация собирается анонимно</string>
+  <string name="acraUserEmail_title">Ваши контактные данные</string>
+  <string name="acraUserEmail_summary">Имя пользователя на paulscode.com</string>
+  <!--Seek Bar Preferences (selected value and units will become the summary-->
+  <string name="touchscreenTransparency_title">Прозрачность оверлея</string>
+  <string name="touchscreenScale_title">Размер кнопок</string>
+  <string name="displayActionBarTransparency_title">Прозрачность верхней панели</string>
+  <!--Path Preferences (selected path will become the summary)-->
+  <!--'~' indicates rel path & use storage dir if path doesn't exist-->
+  <!--'!' indicates rel path & create parent dirs if path doesn't exist-->
+  <string name="pathPreference_dialogTitle">Выбранная папка: %1$s</string>
+  <string name="pathSelectedGame_title">Игра</string>
+  <string name="pathCustomTouchscreen_title">Стандартное расположение папки</string>
+  <string name="pathCustomTouchscreen_default">~</string>
+  <string name="pathHiResTextures_title">Указать путь к архиву с текстурами</string>
+  <string name="pathHiResTextures_summary">Использовать в игре свои текстуры (zip файл)</string>
+  <string name="pathHiResTextures_default">~</string>
+  <string name="pathGameSaves_title">Папка для сохранений</string>
+  <string name="pathGameSaves_default">!mupen64plus</string>
+  <!--Player Map Preferences-->
+  <string name="playerMap_title">Многопользовательская игра</string>
+  <string name="playerMap_summary">Определить контроллер каждого игрока</string>
+  <!--Profile Preferences-->
+  <!--**************************************************************************-->
+  <!--Dialogs and Other Feedback-->
+  <!--Developers: Use formatting arguments rather than string concatenation:-->
+  <!--http://developer.android.com/guide/topics/resources/string-resource.html-->
+  <!--**************************************************************************-->
+  <!--Confirmation Dialogs-->
+  <string name="confirm_title">Подтверждение</string>
+  <string name="confirmResetGame_message">Сбросить игру? Прогресс с момента последнего сохранения будет потерян.</string>
+  <string name="confirmOverwriteFile_message">Перезаписать %1$s?</string>
+  <string name="confirmUnmapAll_message">Сбросить все ассоциации для %1$s?</string>
+  <!--Change Log-->
+  <string name="changeLog_dialogTitle">Список изменений</string>
+  <!--Corrupt Installation Warning-->
+  <string name="invalidInstall_title">Предупреждение</string>
+  <string name="invalidInstall_message">Mupen64 Plus AE мог быть установлен некорректно. В случае систематических ошибок произведите повторную установку приложения.</string>
+  <!--Text Editor Hints (start lower-case)-->
+  <string name="hintFileSave">имя файла</string>
+  <!--Asset Extractor-->
+  <string name="assetExtractor_initializing">Инициализация</string>
+  <string name="assetExtractor_progress">%1$.0f%% Успешно: %2$s</string>
+  <string name="assetExtractor_finished">Готово</string>
+  <string name="assetExtractor_failed">Ошибка извлечения данных приложением. \nПожалуйста, отключите USB-кабель, перезапустите устройство, и повторно запустите приложение. \nДля справки, пожалуйста, посетите %1$s.</string>
+  <!--Cheats Configuration-->
+  <string name="cheats_defaultName">Чит %1$d</string>
+  <string name="cheats_longPress">(нажмите и удерживайте для полного описания)</string>
+  <string name="cheat_disabled">(выключ.)</string>
+  <string name="cheatOption_title">Полный текст</string>
+  <string name="cheatNotes_title">Примечания</string>
+  <string name="cheatNotes_none">(для этого чит-кода нет примечаний)</string>
+  <!--Cheat Editor-->
+  <string name="cheatEditor_help">Помощь</string>
+  <!--Hi-Res Texture Unpacking-->
+  <string name="pathHiResTexturesTask_title">Извлечение текстур</string>
+  <string name="pathHiResTexturesTask_message">Подождите немного.</string>
+  <string name="pathHiResTexturesTask_errorMessage">Ошибка при извлечении текстур!</string>
+  <!--Seek Bar Preference-->
+  <string name="seekBarPreference_summary">%1$d %2$s</string>
+  <!--Path Preference-->
+  <string name="pathPreference_parentFolder">Родительская папка</string>
+  <!--Player Mapping-->
+  <string name="playerMap_deviceWithName">Устройство %1$d (%2$s)</string>
+  <string name="playerMap_deviceWithoutName">Устройство %1$d</string>
+  <string name="playerMapPreference_popupTitle">Игрок %1$d</string>
+  <string name="playerMapPreference_popupMessage">Игрок %1$d, нажмите кнопку или джойстик на вашем контроллере…\n\nТекущие устройства:\n%2$s</string>
+  <string name="playerMapPreference_popupUnmap">Сброс</string>
+  <string name="playerMapPreference_button">Игрок %1$d\n\n%2$s</string>
+  <string name="playerMapPreference_reminder">Напоминать, если управление настроено не для всех игроков</string>
+  <!--Input Mapping-->
+  <string name="inputMapActivity_popupMessage">Нажмите кнопку…\n\nТекущее соответствие:\n%1$s</string>
+  <string name="inputMapActivity_popupUnmap">Сбросить</string>
+  <string name="inputMapActivity_aPadXperiaPlay">Управление джойстиком с сенсорной панели</string>
+  <string name="inputMapActivity_cPadXperiaPlay">Управление C-pad с сенсорной панели</string>
+  <string name="inputMapActivity_btnA">A</string>
+  <string name="inputMapActivity_btnB">B</string>
+  <string name="inputMapActivity_btnC">C</string>
+  <string name="inputMapActivity_btnL">L</string>
+  <string name="inputMapActivity_btnR">R</string>
+  <string name="inputMapActivity_btnZ">Z</string>
+  <string name="inputMapActivity_btnS">S</string>
+  <string name="inputMapActivity_btnCR">C-pad →</string>
+  <string name="inputMapActivity_btnCL">C-pad ←</string>
+  <string name="inputMapActivity_btnCD">C-pad ↓</string>
+  <string name="inputMapActivity_btnCU">C-pad ↑</string>
+  <string name="inputMapActivity_btnDR">D-pad →</string>
+  <string name="inputMapActivity_btnDL">D-pad ←</string>
+  <string name="inputMapActivity_btnDD">D-pad ↓</string>
+  <string name="inputMapActivity_btnDU">D-pad ↑</string>
+  <string name="inputMapActivity_btnAR">Analog →</string>
+  <string name="inputMapActivity_btnAL">Analog ←</string>
+  <string name="inputMapActivity_btnAD">Analog ↓</string>
+  <string name="inputMapActivity_btnAU">Analog ↑</string>
+  <string name="inputMapActivity_incrementSlot">Увеличить слот</string>
+  <string name="inputMapActivity_reset">Сброс</string>
+  <string name="inputMapActivity_pause">Пауза</string>
+  <string name="inputMapActivity_stop">Остановить</string>
+  <string name="inputMapActivity_frameAdvance">Кадр вперед</string>
+  <string name="inputMapActivity_fastForward">Ускорение времени</string>
+  <string name="inputMapActivity_speedDown">Скорость ниже</string>
+  <string name="inputMapActivity_speedUp">Скорость выше</string>
+  <string name="inputMapActivity_gameshark">Gameshark</string>
+  <string name="inputMapActivity_simulateBack">Клавиша \"BACK\"</string>
+  <string name="inputMapActivity_simulateMenu">Клавиша \"MENU\"</string>
+  <!--Controller Diagnostics-->
+  <string name="diagnosticActivity_textKey_text">Нажмите кнопку…</string>
+  <string name="diagnosticActivity_textMotion_text">Прикоснитесь к экрану или джойстику…</string>
+</resources>

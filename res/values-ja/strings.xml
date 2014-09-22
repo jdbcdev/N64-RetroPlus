@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--**************************************************************************-->
+  <!--Menu Strings-->
+  <!--**************************************************************************-->
+  <!--In-Game Menu-->
+  <string name="menuItem_toggleSpeed">%1$d%% スピード</string>
+  <string name="menuItem_slotSave">保存</string>
+  <string name="menuItem_slotLoad">ロード</string>
+  <string name="menuItem_setSlot">%1$dスロット</string>
+  <string name="menuItem_fileSave">ファイルに保存…</string>
+  <string name="menuItem_fileLoad">ファイルからのロード…</string>
+  <string name="menuItem_setSpeed">ゲームの速度</string>
+  <string name="menuItem_paks">コントローラパック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak1_empty">プレイヤー1：なし</string>
+  <string name="menuItem_pak1_mem">プレーヤー1：メモリ·パック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak1_rumble">プレーヤー1：振動パック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak2_empty">プレイヤー2：なし</string>
+  <string name="menuItem_pak2_mem">プレーヤー2：メモリ·パック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak2_rumble">プレーヤー2：振動パック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak3_empty">プレイヤー3：なし</string>
+  <string name="menuItem_pak3_mem">プレーヤー3：メモリ·パック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak3_rumble">プレーヤー3：振動パック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak4_empty">プレイヤー4：なし</string>
+  <string name="menuItem_pak4_mem">プレーヤー4：メモリ·パック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_pak4_rumble">プレーヤー4：振動パック</string>
+  <!--capitalize since trademark-->
+  <string name="menuItem_setIme">IMEを変更</string>
+  <string name="menuItem_exit">終了</string>
+  <!--Input Mapping Activity-->
+  <string name="menuItem_deadzone">デッドゾーン</string>
+  <string name="menuItem_sensitivity">感度</string>
+  <string name="menuItem_unmapAll">全てをアンマップ</string>
+  <!--Menu Activity-->
+  <string name="menuItem_play">プレー</string>
+  <string name="menuItem_settings">設定</string>
+  <string name="menuItem_globalSettings">標準設定</string>
+  <string name="menuItem_touchscreenProfiles">タッチスクリーンプロファイル</string>
+  <string name="menuItem_controllerProfiles">コントローラープロファイル</string>
+  <string name="menuItem_customCheats">カスタムチート</string>
+  <string name="menuItem_help">ヘルプ</string>
+  <string name="menuItem_faq">よくある質問</string>
+  <string name="menuItem_helpForum">ヘルプフォーラム</string>
+  <string name="menuItem_controllerDiagnostics">コントローラ診断</string>
+  <string name="menuItem_reportBug">バグレポート</string>
+  <string name="menuItem_about">Mupen64Plus AEについて</string>
+  <string name="menuItem_credits">クレジット</string>
+  <string name="menuItem_appVersion">アプリバージョン</string>
+  <string name="menuItem_changelog">変更履歴</string>
+  <string name="menuItem_hardwareInfo">ハードウェア情報</string>
+  <string name="menuItem_localeOverride">言語</string>
+  <!--ManageProfilesActivity-->
+  <!--Popup Dialogs-->
+  <string name="popup_faq">Mupen64Plusはボランティアによって開発、維持されています。<small>\n\nグラフィックに不具合がある場合は、<i>ビデオプラグイン</i>を変更してください。\n\nラグを修正するには、<i>ビデオのフレームスキップ</i>の設定や<i>ビデオプラグイン</i>を変更してください。\n\nロムがうまく動作しない場合は、まずファイルを解凍するか別バージョンのロムを試してください。\n\nタッチ画面の操作に問題がある場合は、<i>ボタンの大きさ</i>や<i>ボタンのレイアウト</i>を変更してください。\n\nその他の問題について行き詰まってしまった場合は<i>FAQ</i>を確認してください。ゲーム固有ではない不具合は<i>バグ報告</i>をお願いします。我々は大半の報告に対し24時間以内に対応するよう努力しています。\n\n</small>アプリの改善にご協力いただきありがとうございます!</string>
+  <string name="popup_version">バージョン: %1$s\nバージョンコード: %2$d</string>
+  <!--Lists-->
+  <string name="listItem_edit">編集</string>
+  <string name="listItem_rename">名前の変更</string>
+  <string name="listItem_copy">コピー</string>
+  <string name="listItem_delete">削除</string>
+  <string name="listItem_editCopy">コピーの編集</string>
+  <string name="listItem_disabled">(無効)</string>
+  <!--ManageProfilesActivity Name/Comment Dialog-->
+  <string name="hint_profileComment">説明(オプション)</string>
+  <!--**************************************************************************-->
+  <!--Toast Messages-->
+  <!--Developers: Follow punctuation and grammar as shown below-->
+  <!--**************************************************************************-->
+  <!--Something happening (typically use '-ing' and '…')-->
+  <string name="toast_rebuildingCheats">チートデータベースを再構築…</string>
+  <string name="toast_launchingEmulator">エミュレータを起動する…</string>
+  <string name="toast_loadingSession">状態の自動復元中...</string>
+  <string name="toast_savingSession">状態の自動保存中...</string>
+  <string name="toast_loadingSlot">スロット%1$dの読み込み中...</string>
+  <string name="toast_savingSlot">スロット%1$dへ保存中...</string>
+  <string name="toast_loadingFile">%1$s 読み込こみ中</string>
+  <string name="toast_savingFile">%1$s 保存中…</string>
+  <string name="toast_overwritingFile">%1$sへ上書き中...</string>
+  <string name="toast_loadingGameInfo">ゲーム情報の読み込み...</string>
+  <!--Something happened (use '.')-->
+  <string name="toast_usingSlot">スロット%1$dを使用中</string>
+  <string name="toast_sdInaccessible">SDカードににアクセスできません。 （USBケーブルを外してください）</string>
+  <string name="toast_crashReportSent">エラーレポートを送信しました。</string>
+  <!--**************************************************************************-->
+  <!--Preference Menu Strings-->
+  <!--Developers: Please follow naming conventions described in preferences.xml-->
+  <!--Developers: In general, capitalize first word only and avoid punctuation-->
+  <!--**************************************************************************-->
+  <!--Actions (simply launch an action, aren't related to persistent data)-->
+  <string name="actionResume_title">再開</string>
+  <string name="actionResume_summary">チートを使用している場合は動作しない場合があります。</string>
+  <string name="actionRestart_title">再起動</string>
+  <string name="actionRestart_summary">チートを使用している場合はこちらを推奨</string>
+  <string name="actionReloadAssets_title">アプリデータを再読み込み</string>
+  <string name="actionReloadAssets_summary">ユーザー設定、ロム、セーブデーターやその他のデータには影響がありません。</string>
+  <string name="actionCrashTest_title">テスト</string>
+  <string name="actionCrashTest_summary">開発者に構成レポートを送信する</string>
+  <string name="actionResetUserPrefs_title">リセット</string>
+  <string name="actionResetUserPrefs_summary">設定を既定値にリセット</string>
+  <string name="actionResetUserPrefs_popupMessage">すべての設定をデフォルトにリセットしますか?<small>\n\n設定ファイルへの直接の変更も上書きされます。</small></string>
+  <string name="actionShare_title">共有</string>
+  <!--Preference Screens-->
+  <string name="screenInput_title">入力</string>
+  <string name="screenInput_summary">コントローラーの設定</string>
+  <string name="screenTouchscreen_title">タッチスクリーン</string>
+  <string name="screenTouchscreen_summary">タッチパネル/タッチパッドの設定</string>
+  <string name="screenTouchpad_title">タッチパッド</string>
+  <string name="screenTouchpad_summary">Xperia PLAYの設定</string>
+  <string name="screenDisplay_title">表示</string>
+  <string name="screenDisplay_summary">レイアウトの設定</string>
+  <string name="screenVideo_title">ビデオ</string>
+  <string name="screenVideo_summary">グラフィックの設定</string>
+  <string name="screenAdvanced_title">高度な設定</string>
+  <string name="screenAdvanced_summary">コア、ストレージ、デバッグ設定</string>
+  <string name="screenGlobalSettings_title">標準設定</string>
+  <string name="screenCheats_title">チート</string>
+  <string name="screenCheats_summaryEnabled">有効</string>
+  <string name="screenCheats_summaryDisabled">使用禁止</string>
+  <!--Preference Categories-->
+  <string name="categoryCheats_title">チートの設定 (長押しで詳細を表示)</string>
+  <string name="categoryHardware_title">ハードウェア設定</string>
+  <string name="categoryOther_title">その他の設定</string>
+  <string name="categoryTouchscreenBehavior_title">行動</string>
+  <string name="categoryTouchscreenAppearance_title">外観</string>
+  <string name="categoryGln64_title">Gln64の設定</string>
+  <string name="categoryRice_title">Riceの設定</string>
+  <string name="categoryGlide64_title">Glide64設定</string>
+  <string name="categoryCore_title">コア</string>
+  <string name="categoryAudio_title">オーディオ</string>
+  <string name="categoryData_title">データ</string>
+  <string name="categoryCrashReports_title">クラッシュレポート</string>
+  <string name="categoryGameSettings_title">ゲーム毎の設定</string>
+  <string name="categoryGameSettings_titleNamed">%1$sの設定</string>
+  <!--Checkbox Preferences-->
+  <string name="playShowCheats_title">チートを有効化</string>
+  <string name="playShowCheats_summary">有効中は、メニューのロ読み込みが遅くなります。</string>
+  <string name="touchscreenEnabled_title">タッチスクリーンを有効</string>
+  <string name="touchscreenFeedback_title">触覚フィードバック</string>
+  <string name="touchscreenFeedback_summary">ボタンを押した際に振動</string>
+  <string name="touchpadEnabled_title">タッチパッドを有効</string>
+  <string name="inputVolumeMappable_title">ボリュームキーを有効</string>
+  <string name="inputVolumeMappable_summary">コントローラのボタンとしてボリュームキーを使用</string>
+  <string name="inputShareController_title">共有コントローラ</string>
+  <string name="inputShareController_summary">入力デバイスは、一度に複数のプレーヤーを制御することができます。</string>
+  <string name="displayImmersiveMode_title">Immersiveモード</string>
+  <string name="displayImmersiveMode_summary">通知バーを隠す</string>
+  <string name="gln64Fog_title">霧</string>
+  <string name="gln64Fog_summary">(WIP)</string>
+  <string name="gln64Sai_title">2xSaiテクスチャフィルタ</string>
+  <string name="gln64Sai_summary">テクスチャピクセレーションを低減</string>
+  <string name="gln64ScreenClear_title">強制スクリーンクリア</string>
+  <string name="gln64ScreenClear_summary">無効にすると、正しく描写されなくなる可能性があります。</string>
+  <string name="gln64AlphaTest_title">アルファテスト</string>
+  <string name="gln64AlphaTest_summary">無効にすると、黒いテクスチャが発生することがあります</string>
+  <string name="gln64DepthTest_title">ハックZ</string>
+  <string name="gln64DepthTest_summary">無効にすると、背景が点滅することがあります。</string>
+  <string name="riceAutoFrameskip_title">自動フレームスキップ</string>
+  <string name="riceAutoFrameskip_summary">フレームレートを犠牲にしてスピードを向上させます</string>
+  <string name="riceFastTexture_title">高速テクスチャ読み込み</string>
+  <string name="riceFastTexture_summary">サークルトランジションの修正</string>
+  <string name="riceForceTextureFilter_title">テクスチャフィルタリング</string>
+  <string name="riceForceTextureFilter_summary">遠くの物体のテクスチャの陽炎やブラー効果を修正</string>
+  <string name="riceHiResTextures_title">高解像度テクスチャ</string>
+  <string name="riceHiResTextures_summary">インポートしたテクスチャパックを使用する</string>
+  <string name="riceFog_title">霧</string>
+  <string name="riceFog_summary">霧エフェクトを表示します</string>
+  <string name="audioSwapChannels_title">オーディオチャンネルを入替える</string>
+  <string name="audioSwapChannels_summary">オーディオチャンネルの左右を入替える</string>
+  <!--List Preferences (in this app, most ListPreferences use android:summary="@string/selectedValue")-->
+  <string name="touchscreenAutoHold_title">ボタンオートホールド</string>
+  <string name="touchscreenAutoHold_entryDisabled">使用禁止</string>
+  <string name="touchscreenAutoHold_entryLongPress">長押し</string>
+  <string name="touchscreenAutoHold_entrySlideOut">スライドオフ</string>
+  <string name="touchscreenAutoHoldables_title">保持可能なボタン</string>
+  <string name="touchscreenRefresh_title">ジョイスティック アニメーション頻度</string>
+  <string name="touchscreenRefresh_entryNever">動かさない</string>
+  <string name="touchscreenRefresh_entryOccasionally">中</string>
+  <string name="touchscreenRefresh_entryFrequently">大</string>
+  <string name="touchscreenStyle_title">ボタンスタイル</string>
+  <string name="touchscreenStyle_entryOutline">輪郭</string>
+  <string name="touchscreenStyle_entryShaded">影付きの</string>
+  <string name="touchscreenHeight_title">垂直ボタンの間隔</string>
+  <string name="touchscreenHeight_entryAuto">オート</string>
+  <string name="touchscreenHeight_entryFullHeight">フルハイト</string>
+  <string name="touchscreenHeight_entryHalfHeight">ハーフハイト</string>
+  <string name="touchscreenLayout_title">タッチスクリーン·レイアウト</string>
+  <string name="touchscreenLayout_entryAnalog">アナログ (roymustang16によって)</string>
+  <string name="touchscreenLayout_entryDigital">デジタル (roymustang16によって)</string>
+  <string name="touchscreenLayout_entryAll">両方(roymustang16による)</string>
+  <string name="touchscreenLayout_entryCustom">カスタム (http://tinyurl.com/984ofyo を参照)</string>
+  <string name="touchpadLayout_title">タッチパッド レイアウト</string>
+  <string name="touchpadLayout_entryDefault">左パッド： アナログ; 右パッド： Cボタン</string>
+  <string name="touchpadLayout_entryReverse">左パッド： Cボタ; 右パッド: アナログ</string>
+  <string name="displayOrientation_title">画面の向き</string>
+  <string name="displayOrientation_entryLandscape">横方向</string>
+  <string name="displayOrientation_entryReverseLandscape">反転横向き</string>
+  <string name="displayOrientation_entryPortrait">縦向き</string>
+  <string name="displayOrientation_entryReversePortrait">反転縦向き</string>
+  <string name="displayPosition_title">画面の位置</string>
+  <string name="displayPosition_entryBottom">下部</string>
+  <string name="displayPosition_entryMiddle">中央</string>
+  <string name="displayPosition_entryTop">上部</string>
+  <string name="displayResolution_title">表示する解像度</string>
+  <string name="displayResolution_entryNative">ネイティブ (最高画質)</string>
+  <string name="displayResolution_entry960x720">960 x 720</string>
+  <string name="displayResolution_entry800x600">800 x 600</string>
+  <string name="displayResolution_entry640x480">640 x 480</string>
+  <string name="displayResolution_entry480x360">480 x 360</string>
+  <string name="displayResolution_entry320x240">320 x 240</string>
+  <string name="displayResolution_entry160x120">160 x 120 (最高フレームレート)</string>
+  <string name="displayScaling_title">スクリーンスケーリング</string>
+  <string name="displayScaling_entryNone">なし\n<small>選択された解像度を使用します</small></string>
+  <string name="displayScaling_entryZoom">ズーム\n<small>フルスクリーン、歪みなし (通知バーあり)</small></string>
+  <string name="displayScaling_entryCrop">切り取り\n<small>フルスクリーン、歪みなし (グラフィックが切取られます)</small></string>
+  <string name="displayScaling_entryStretch">引き延ばし\n<small>フルスクリーン 、通知バーなし (歪みの原因となる)</small></string>
+  <string name="displayFpsRefresh_title">フレームレート表示</string>
+  <string name="displayFpsRefresh_entryNever">決して</string>
+  <string name="displayFpsRefresh_entryOccasionally">時折</string>
+  <string name="displayFpsRefresh_entryFrequently">頻繁</string>
+  <string name="videoPlugin_title">ビデオプラグイン</string>
+  <string name="videoPlugin_entryNone">なし（ビデオ無効）</string>
+  <string name="videoPlugin_entryGln64">gln64\n<small>(GLN64 v0.4.1の適応)</small></string>
+  <string name="videoPlugin_entryRice">rice\n<small>(Rice Video v6.1.0(b)のポート)</small></string>
+  <string name="videoPlugin_entryGlide64">glide64\n<small>(Glide64 Final (10th Anniversary)のポート)</small></string>
+  <string name="videoHardwareType_title">フリッカー低減</string>
+  <string name="videoHardwareType_entryAuto">携帯電話/タブレットの自動検出</string>
+  <string name="videoHardwareType_entryStandard">標準プロファイル</string>
+  <string name="videoHardwareType_entryI">Iプロフィール</string>
+  <string name="videoHardwareType_entryO1">O-1プロフィール</string>
+  <string name="videoHardwareType_entryO2">O-2プロフィール</string>
+  <string name="videoHardwareType_entryQ">Qプロフィール</string>
+  <string name="videoHardwareType_entryT">Tプロフィール</string>
+  <string name="videoHardwareType_entryCustom">カスタムプロファイル</string>
+  <string name="videoPolygonOffset_title">ポリゴンオフセット</string>
+  <string name="videoPolygonOffset_summary">フリッカー低減の手動設定</string>
+  <string name="gln64Frameskip_title">フレームスキップ</string>
+  <string name="gln64Frameskip_entryNever">フレームをスキップしない</string>
+  <string name="gln64Frameskip_entryUpTo1">最大1フレームをスキップ</string>
+  <string name="gln64Frameskip_entryUpTo2">最大2フレームをスキップ</string>
+  <string name="gln64Frameskip_entryUpTo3">最大3フレームをスキップ</string>
+  <string name="gln64Frameskip_entryUpTo4">最大4フレームをスキップ</string>
+  <string name="gln64Frameskip_entryUpTo5">最大5フレームをスキップ</string>
+  <string name="gln64Frameskip_entryExactly1">必ず1フレームをスキップ</string>
+  <string name="gln64Frameskip_entryExactly2">必ず2フレームをスキップ</string>
+  <string name="gln64Frameskip_entryExactly3">必ず3フレームをスキップ</string>
+  <string name="gln64Frameskip_entryExactly4">必ず4フレームをスキップ</string>
+  <string name="gln64Frameskip_entryExactly5">必ず5フレームをスキップ</string>
+  <string name="riceScreenUpdate_title">画面の更新方法</string>
+  <string name="riceScreenUpdate_entryRomDefault">ROMのデフォルト</string>
+  <string name="riceScreenUpdate_entryVIOriginUpdate">VI原点アップデート</string>
+  <string name="riceScreenUpdate_entryVIOriginChange">VIの原点の変更</string>
+  <string name="riceScreenUpdate_entryCIChange">CIの変更</string>
+  <string name="riceScreenUpdate_entryFirstCIChange">最初のCI変更</string>
+  <string name="riceScreenUpdate_entryFirstPrimDraw">最初の原始的な描画</string>
+  <string name="riceScreenUpdate_entryBeforeScreenClear">画面がクリアする前に</string>
+  <string name="riceScreenUpdate_entryAfterScreenDrawn">画面に描画した後</string>
+  <string name="riceTextureEnhancement_title">テクスチャアップスケーリング/強化</string>
+  <string name="riceTextureEnhancement_entryNone">なし</string>
+  <string name="riceTextureEnhancement_entryScale2x">スケール2倍</string>
+  <string name="riceTextureEnhancement_entry2xsai">2x SaI</string>
+  <string name="riceTextureEnhancement_entryHq2x">HQ2x</string>
+  <string name="riceTextureEnhancement_entryLq2x">LQ2x</string>
+  <string name="riceTextureEnhancement_entryHq4x">HQ4x</string>
+  <string name="riceTextureEnhancement_entrySharpen">研ぐ</string>
+  <string name="riceTextureEnhancement_entrySharpen_more">続き研ぐ</string>
+  <string name="navigationMode_title">アクセシビリティ</string>
+  <string name="navigationMode_summary">メニューナビゲーションモード：%1$s</string>
+  <string name="navigationMode_entryAuto">デバイス構成から自動選択</string>
+  <string name="navigationMode_entryStandard">スタンダードモード</string>
+  <string name="navigationMode_entryBigScreen">ビッグスクリーンモード (無タッチスクリーン入力;のみゲームパッド/キーボード入力)</string>
+  <string name="r4300Emulator_title">R4300エミュレータ</string>
+  <string name="r4300Emulator_entryPureInterpreter">純粋なインタプリタ</string>
+  <string name="r4300Emulator_entryCachedInterpreter">キャッシュインタプリタ</string>
+  <string name="r4300Emulator_entryDynarec">動的リコンパイラ (DynaRec)</string>
+  <string name="audioPlugin_title">オーディオプラグイン</string>
+  <string name="audioPlugin_entryNone">なし（オーディオ無効）</string>
+  <string name="audioPlugin_entryNoneNoSpeedLimit">None-debug (オーディオ無効、スピード制限なし)</string>
+  <string name="audioPlugin_entrySdl">mupen64plus-audio-sdl, v2.0</string>
+  <string name="audioBufferSize_title">オーディオバッファサイズ</string>
+  <string name="audioBufferSize_entry2048">デフォルト</string>
+  <string name="audioBufferSize_entry128">低遅延（実験）</string>
+  <string name="audioBufferSize_entry8">ウルトラ低遅延（実験）</string>
+  <string name="localeOverride_entrySystemDefault">システムのデフォルト</string>
+  <!--ACRA Preferences (key names must not be changed)-->
+  <string name="acraEnable_title">クラッシュレポートを有効</string>
+  <string name="acraEnable_summary">個人情報は収集されません</string>
+  <string name="acraUserEmail_title">連絡先</string>
+  <string name="acraUserEmail_summary">あなたのpaulscode.comユーザ名（必須ではありません）</string>
+  <!--Seek Bar Preferences (selected value and units will become the summary-->
+  <string name="touchscreenTransparency_title">タッチスクリーンの透明度</string>
+  <string name="touchscreenScale_title">ボタンのスケール</string>
+  <string name="displayActionBarTransparency_title">アクションバーの不透明度</string>
+  <!--Path Preferences (selected path will become the summary)-->
+  <!--'~' indicates rel path & use storage dir if path doesn't exist-->
+  <!--'!' indicates rel path & create parent dirs if path doesn't exist-->
+  <string name="pathPreference_dialogTitle">選択したフォルダ： %1$s</string>
+  <string name="pathSelectedGame_title">ゲーム</string>
+  <string name="pathCustomTouchscreen_title">カスタムレイアウトフォルダ</string>
+  <string name="pathCustomTouchscreen_default">~</string>
+  <string name="pathHiResTextures_title">インポートテクスチャパック</string>
+  <string name="pathHiResTextures_summary">ゲームにカスタムテクスチャ(ZIP)を適用</string>
+  <string name="pathHiResTextures_default">~</string>
+  <string name="pathGameSaves_title">セーブデータフォルダ</string>
+  <string name="pathGameSaves_default">!mupen64plus</string>
+  <!--Player Map Preferences-->
+  <string name="playerMap_title">マルチプレイ</string>
+  <string name="playerMap_summary">各プレイヤーのコントローラーを定義</string>
+  <!--Profile Preferences-->
+  <string name="emulationProfile_title">エミュレーションプロファイル</string>
+  <string name="touchscreenProfile_title">タッチスクリーンプロファイル</string>
+  <string name="controllerProfile_title">コントローラープロファイル</string>
+  <!--**************************************************************************-->
+  <!--Dialogs and Other Feedback-->
+  <!--Developers: Use formatting arguments rather than string concatenation:-->
+  <!--http://developer.android.com/guide/topics/resources/string-resource.html-->
+  <!--**************************************************************************-->
+  <!--Confirmation Dialogs-->
+  <string name="confirm_title">確認</string>
+  <string name="confirmResetGame_message"> 前回の保存以降のすべての進行状況が失われますが、ゲームをリセットしますか？</string>
+  <string name="confirmOverwriteFile_message">%1$sに上書きしますか?</string>
+  <string name="confirmUnmapAll_message">%1$sに対するすべての入力をアンマップ？</string>
+  <string name="confirmDeleteProfile_message">プロファイル \"%1$s\"? を削除しますか?</string>
+  <!--Change Log-->
+  <string name="changeLog_dialogTitle">変更履歴</string>
+  <!--Corrupt Installation Warning-->
+  <string name="invalidInstall_title">警告</string>
+  <string name="invalidInstall_message">Mupen64Plus AEは正しくインストールしていない可能性。 任意のプログラムのクラッシュが発生した場合アプリケーションを再インストールしてください。</string>
+  <!--Text Editor Hints (start lower-case)-->
+  <string name="hintFileSave">ファイル名</string>
+  <!--Asset Extractor-->
+  <string name="assetExtractor_initializing">初期中</string>
+  <string name="assetExtractor_progress">%1$.0f%% 完了: %2$s</string>
+  <string name="assetExtractor_finished">終了しました</string>
+  <string name="assetExtractor_failed">アプリケーションデータの抽出エラーが発生しました。\nUSBケーブルの再接続、デバイスの再起動、アプリの再起動を試してみてください。\nヘルプが必要な場合は、%1$s をご覧ください</string>
+  <!--Cheats Configuration-->
+  <string name="cheats_defaultName">チート %1$d</string>
+  <string name="cheats_longPress">（長押しで全文を表示）</string>
+  <string name="cheat_disabled">（無効）</string>
+  <string name="cheatOption_title">全文</string>
+  <string name="cheatNotes_title">情報</string>
+  <string name="cheatNotes_none">（このチートの詳細情報はありません）</string>
+  <!--Cheat Editor-->
+  <string name="menuItem_cheatEditor">チート編集</string>
+  <string name="cheatEditor_edit">チートの編集</string>
+  <string name="cheatEditor_edit_desc">長押しでチートの編集</string>
+  <string name="cheatEditor_help">ヘルプ</string>
+  <string name="cheatEditor_readme2">チートを追加、編集する場合は、次のガイドラインに従ってください:</string>
+  <string name="cheatEditor_readme3">1. タイトルと説明は改行を含めることはできません。改行はスペースに置き換えられます。</string>
+  <string name="cheatEditor_config">チートの設定</string>
+  <string name="cheatEditor_config_desc">チート設定の編集</string>
+  <string name="cheatEditor_title">チートタイトル</string>
+  <string name="cheatEditor_title_desc">チートタイトルの編集</string>
+  <string name="cheatEditor_cancel">キャンセル</string>
+  <string name="cheatEditor_confirm">よろしいですか?</string>
+  <string name="cheatEditor_yes">はい</string>
+  <string name="cheatEditor_no">いいえ</string>
+  <string name="cheatEditor_info">チート情報</string>
+  <string name="cheatEditor_title2">タイトル:</string>
+  <string name="cheatEditor_saveConfirm">チートファイルを保存しますか?</string>
+  <!--Hi-Res Texture Unpacking-->
+  <string name="pathHiResTexturesTask_title">テクスチャの展開中</string>
+  <string name="pathHiResTexturesTask_message">しばらくお待ちください。このプロセスには多少時間がかかる場合があります。</string>
+  <string name="pathHiResTexturesTask_errorMessage">テクスチャの展開時に問題が発生しました！</string>
+  <!--Seek Bar Preference-->
+  <string name="seekBarPreference_summary">%1$d %2$s</string>
+  <!--Path Preference-->
+  <string name="pathPreference_parentFolder">親フォルダー</string>
+  <!--Player Mapping-->
+  <string name="playerMap_deviceWithName">デバイス %1$d (%2$s)</string>
+  <string name="playerMap_deviceWithoutName">デバイス %1$d</string>
+  <string name="playerMapPreference_popupTitle">プレーヤー %1$d</string>
+  <string name="playerMapPreference_popupMessage">プレイヤー%1$dは、コントローラ上のボタンまたはジョイスティックを押してください。\n\n現在のデバイス:\n%2$s</string>
+  <string name="playerMapPreference_popupUnmap">アンマップ</string>
+  <string name="playerMapPreference_button">プレーヤー %1$d\n\n%2$s</string>
+  <string name="playerMapPreference_reminder">プレイヤーがコントロールにマップされていない時に通知。</string>
+  <!--Input Mapping-->
+  <string name="inputMapActivity_popupMessage">あなたがマップしたいボタン、キー、ジョイスティックを押してください。\n\n現在のマッピング:\n%1$s</string>
+  <string name="inputMapActivity_popupUnmap">アンマップ</string>
+  <string name="inputMapActivity_aPadXperiaPlay">アナログスティックはタッチパッドで制御され。</string>
+  <string name="inputMapActivity_cPadXperiaPlay">C-パッドはタッチパッドで制御されている。</string>
+  <string name="inputMapActivity_btnA">A</string>
+  <string name="inputMapActivity_btnB">B</string>
+  <string name="inputMapActivity_btnC">C</string>
+  <string name="inputMapActivity_btnL">L</string>
+  <string name="inputMapActivity_btnR">R</string>
+  <string name="inputMapActivity_btnZ">Z</string>
+  <string name="inputMapActivity_btnS">S</string>
+  <string name="inputMapActivity_btnCR">Cパッド →</string>
+  <string name="inputMapActivity_btnCL">Cパッド ←</string>
+  <string name="inputMapActivity_btnCD">Cパッド ↓</string>
+  <string name="inputMapActivity_btnCU">Cパッド ↑</string>
+  <string name="inputMapActivity_btnDR">Dパッド →</string>
+  <string name="inputMapActivity_btnDL">Dパッド ←</string>
+  <string name="inputMapActivity_btnDD">Dパッド ↓</string>
+  <string name="inputMapActivity_btnDU">Dパッド ↑</string>
+  <string name="inputMapActivity_btnAR">アナログ →</string>
+  <string name="inputMapActivity_btnAL">アナログ ←</string>
+  <string name="inputMapActivity_btnAD">アナログ ↓</string>
+  <string name="inputMapActivity_btnAU">アナログ ↑</string>
+  <string name="inputMapActivity_incrementSlot">インクリメントスロット</string>
+  <string name="inputMapActivity_reset">ゲームをリセット</string>
+  <string name="inputMapActivity_pause">休止</string>
+  <string name="inputMapActivity_stop">停止</string>
+  <string name="inputMapActivity_frameAdvance">コマ送り</string>
+  <string name="inputMapActivity_fastForward">早送り</string>
+  <string name="inputMapActivity_speedDown">スピードダウン</string>
+  <string name="inputMapActivity_speedUp">スピードアップ</string>
+  <string name="inputMapActivity_gameshark">Gameshark</string>
+  <string name="inputMapActivity_simulateBack">戻るキー</string>
+  <string name="inputMapActivity_simulateMenu">メニューキー</string>
+  <!--Controller Diagnostics-->
+  <string name="diagnosticActivity_textKey_text">ボタンまたはキーを押してください…</string>
+  <string name="diagnosticActivity_textMotion_text">画面またはジョイスティックをタッチしてください…</string>
+</resources>
