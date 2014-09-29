@@ -146,6 +146,7 @@ public class GalleryActivity extends Activity implements OnClickListener
             case R.id.menuItem_controllerProfiles:
                 startActivity( new Intent( this, ManageControllerProfilesActivity.class ) );
                 return true;
+            /*
             case R.id.menuItem_faq:
                 popupFaq();
                 return true;
@@ -158,7 +159,6 @@ public class GalleryActivity extends Activity implements OnClickListener
             case R.id.menuItem_reportBug:
                 Utility.launchUri( GalleryActivity.this, R.string.uri_bugReport );
                 return true;
-            /*
             case R.id.menuItem_appVersion:
                 popupAppVersion();
                 return true;
