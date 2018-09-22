@@ -24,7 +24,6 @@ import java.io.File;
 
 import es.jdbc.n64retroplus.persistent.AppData;
 import es.jdbc.n64retroplus.persistent.UserPrefs;
-import es.jdbc.n64retroplus.util.CrashTester;
 import es.jdbc.n64retroplus.util.PrefUtil;
 import es.jdbc.n64retroplus.util.Prompt;
 import es.jdbc.n64retroplus.util.Prompt.PromptConfirmListener;
@@ -41,19 +40,18 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
-public class SettingsGlobalActivity extends PreferenceActivity implements OnPreferenceClickListener,
-        OnSharedPreferenceChangeListener
-{
+public class SettingsGlobalActivity extends PreferenceActivity
+        implements OnPreferenceClickListener, OnSharedPreferenceChangeListener {
     // These constants must match the keys used in res/xml/preferences.xml
-    
+
     private static final String ACTION_CRASH_TEST = "actionCrashTest";
     private static final String ACTION_RELOAD_ASSETS = "actionReloadAssets";
     private static final String ACTION_RESET_USER_PREFS = "actionResetUserPrefs";
-    
+
     private static final String SCREEN_ROOT = "screenRoot";
     private static final String SCREEN_TOUCHPAD = "screenTouchpad";
     private static final String SCREEN_DISPLAY = "screenDisplay";
-    
+
     private static final String DISPLAY_IMMERSIVE_MODE = "displayImmersiveMode";
     private static final String DISPLAY_ACTION_BAR_TRANSPARENCY = "displayActionBarTransparency";
     private static final String NAVIGATION_MODE = "navigationMode";
@@ -61,151 +59,142 @@ public class SettingsGlobalActivity extends PreferenceActivity implements OnPref
     private static final String AUDIO_SYNCHRONIZE = "audioSynchronize";
     private static final String AUDIO_SWAP_CHANNELS = "audioSwapChannels";
     private static final String ACRA_USER_EMAIL = "acra.user.email";
-    
+
     // App data and user preferences
     private AppData mAppData = null;
     private UserPrefs mUserPrefs = null;
     private SharedPreferences mPrefs = null;
-    
-    @SuppressWarnings( "deprecation" )
+
+    @SuppressWarnings("deprecation")
     @Override
-    protected void onCreate( Bundle savedInstanceState )
-    {
-        super.onCreate( savedInstanceState );
-        
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         // Get app data and user preferences
-        mAppData = new AppData( this );
-        mUserPrefs = new UserPrefs( this );
-        mUserPrefs.enforceLocale( this );
-        mPrefs = PreferenceManager.getDefaultSharedPreferences( this );
-        
+        mAppData = new AppData(this);
+        mUserPrefs = new UserPrefs(this);
+        mUserPrefs.enforceLocale(this);
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+
         // Load user preference menu structure from XML and update view
-        addPreferencesFromResource( R.xml.preferences_global );
-        
+        addPreferencesFromResource(R.xml.preferences_global);
+
         // Refresh the preference data wrapper
-        mUserPrefs = new UserPrefs( this );
-        
-        // Handle certain menu items that require extra processing or aren't actually preferences
-        PrefUtil.setOnPreferenceClickListener( this, ACTION_RELOAD_ASSETS, this );
-        PrefUtil.setOnPreferenceClickListener( this, ACTION_RESET_USER_PREFS, this );
-        PrefUtil.setOnPreferenceClickListener( this, ACTION_CRASH_TEST, new CrashTester( this ) );
-        
-        // Hide certain categories altogether if they're not applicable. Normally we just rely on
-        // the built-in dependency disabler, but here the categories are so large that hiding them
+        mUserPrefs = new UserPrefs(this);
+
+        // Handle certain menu items that require extra processing or aren't actually
+        // preferences
+        PrefUtil.setOnPreferenceClickListener(this, ACTION_RELOAD_ASSETS, this);
+        PrefUtil.setOnPreferenceClickListener(this, ACTION_RESET_USER_PREFS, this);
+
+        // Hide certain categories altogether if they're not applicable. Normally we
+        // just rely on
+        // the built-in dependency disabler, but here the categories are so large that
+        // hiding them
         // provides a better user experience.
-        if( !AppData.IS_KITKAT )
-            PrefUtil.removePreference( this, SCREEN_DISPLAY, DISPLAY_IMMERSIVE_MODE );
-        
-        if( !mUserPrefs.isActionBarAvailable )
-            PrefUtil.removePreference( this, SCREEN_DISPLAY, DISPLAY_ACTION_BAR_TRANSPARENCY );
-        
-        if( !mAppData.hardwareInfo.isXperiaPlay )
-            PrefUtil.removePreference( this, SCREEN_ROOT, SCREEN_TOUCHPAD );
+        if (!AppData.IS_KITKAT)
+            PrefUtil.removePreference(this, SCREEN_DISPLAY, DISPLAY_IMMERSIVE_MODE);
+
+        if (!mUserPrefs.isActionBarAvailable)
+            PrefUtil.removePreference(this, SCREEN_DISPLAY, DISPLAY_ACTION_BAR_TRANSPARENCY);
+
+        if (!mAppData.hardwareInfo.isXperiaPlay)
+            PrefUtil.removePreference(this, SCREEN_ROOT, SCREEN_TOUCHPAD);
     }
-    
+
     @Override
-    protected void onPause()
-    {
+    protected void onPause() {
         super.onPause();
-        mPrefs.unregisterOnSharedPreferenceChangeListener( this );
+        mPrefs.unregisterOnSharedPreferenceChangeListener(this);
     }
-    
+
     @Override
-    protected void onResume()
-    {
+    protected void onResume() {
         super.onResume();
-        mPrefs.registerOnSharedPreferenceChangeListener( this );
+        mPrefs.registerOnSharedPreferenceChangeListener(this);
         refreshViews();
     }
-    
+
     @Override
-    public void onSharedPreferenceChanged( SharedPreferences sharedPreferences, String key )
-    {
-        if( key.equals( NAVIGATION_MODE ) )
-        {
-            // Sometimes one preference change affects the hierarchy or layout of the views. In this
-            // case it's easier just to restart the activity than try to figure out what to fix.
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (key.equals(NAVIGATION_MODE)) {
+            // Sometimes one preference change affects the hierarchy or layout of the views.
+            // In this
+            // case it's easier just to restart the activity than try to figure out what to
+            // fix.
             finish();
-            startActivity( getIntent() );
-        }
-        else
-        {
+            startActivity(getIntent());
+        } else {
             // Just refresh the preference screens in place
             refreshViews();
         }
     }
-    
-    @TargetApi( 9 )
-    @SuppressWarnings( "deprecation" )
-    private void refreshViews()
-    {
+
+    @TargetApi(9)
+    @SuppressWarnings("deprecation")
+    private void refreshViews() {
         // Refresh the preferences object
-        mUserPrefs = new UserPrefs( this );
-        
+        mUserPrefs = new UserPrefs(this);
+
         // Enable audio prefs if audio is enabled
-        PrefUtil.enablePreference( this, AUDIO_BUFFER_SIZE, mUserPrefs.audioPlugin.enabled );
-        PrefUtil.enablePreference( this, AUDIO_SYNCHRONIZE, mUserPrefs.audioPlugin.enabled );
-        PrefUtil.enablePreference( this, AUDIO_SWAP_CHANNELS, mUserPrefs.audioPlugin.enabled );
-        
+        PrefUtil.enablePreference(this, AUDIO_BUFFER_SIZE, mUserPrefs.audioPlugin.enabled);
+        PrefUtil.enablePreference(this, AUDIO_SYNCHRONIZE, mUserPrefs.audioPlugin.enabled);
+        PrefUtil.enablePreference(this, AUDIO_SWAP_CHANNELS, mUserPrefs.audioPlugin.enabled);
+
         // Update the summary text in a particular way for ACRA user info
-        EditTextPreference pref = (EditTextPreference) findPreference( ACRA_USER_EMAIL );
+        EditTextPreference pref = (EditTextPreference) findPreference(ACRA_USER_EMAIL);
         String value = pref.getText();
-        if( TextUtils.isEmpty( value ) )
-            pref.setSummary( getString( R.string.acraUserEmail_summary ) );
+        if (TextUtils.isEmpty(value))
+            pref.setSummary(getString(R.string.acraUserEmail_summary));
         else
-            pref.setSummary( value );
+            pref.setSummary(value);
     }
-    
+
     @Override
-    public boolean onPreferenceClick( Preference preference )
-    {
+    public boolean onPreferenceClick(Preference preference) {
         // Handle the clicks on certain menu items that aren't actually preferences
         String key = preference.getKey();
-        
-        if( key.equals( ACTION_RELOAD_ASSETS ) )
+
+        if (key.equals(ACTION_RELOAD_ASSETS))
             actionReloadAssets();
-        
-        else if( key.equals( ACTION_RESET_USER_PREFS ) )
+
+        else if (key.equals(ACTION_RESET_USER_PREFS))
             actionResetUserPrefs();
-        
+
         else
             // Let Android handle all other preference clicks
             return false;
-        
+
         // Tell Android that we handled the click
         return true;
     }
-    
-    private void actionReloadAssets()
-    {
-        mAppData.putAssetVersion( 0 );
-        startActivity( new Intent( this, SplashActivity.class ) );
+
+    private void actionReloadAssets() {
+        mAppData.putAssetVersion(0);
+        startActivity(new Intent(this, SplashActivity.class));
         finish();
     }
-    
-    private void actionResetUserPrefs()
-    {
-        String title = getString( R.string.confirm_title );
-        String message = getString( R.string.actionResetUserPrefs_popupMessage );
-        Prompt.promptConfirm( this, title, message, new PromptConfirmListener()
-        {
+
+    private void actionResetUserPrefs() {
+        String title = getString(R.string.confirm_title);
+        String message = getString(R.string.actionResetUserPrefs_popupMessage);
+        Prompt.promptConfirm(this, title, message, new PromptConfirmListener() {
             @Override
-            public void onConfirm()
-            {
+            public void onConfirm() {
                 // Reset the user preferences
-                mPrefs.unregisterOnSharedPreferenceChangeListener( SettingsGlobalActivity.this );
+                mPrefs.unregisterOnSharedPreferenceChangeListener(SettingsGlobalActivity.this);
                 mPrefs.edit().clear().commit();
-                PreferenceManager.setDefaultValues( SettingsGlobalActivity.this, R.xml.preferences_global, true );
-                
+                PreferenceManager.setDefaultValues(SettingsGlobalActivity.this, R.xml.preferences_global, true);
+
                 // Also reset any manual overrides the user may have made in the config file
-                File configFile = new File( mUserPrefs.mupen64plus_cfg );
-                if( configFile.exists() )
+                File configFile = new File(mUserPrefs.mupen64plus_cfg);
+                if (configFile.exists())
                     configFile.delete();
-                
+
                 // Rebuild the menu system by restarting the activity
                 finish();
-                startActivity( getIntent() );
+                startActivity(getIntent());
             }
-        } );
+        });
     }
 }
